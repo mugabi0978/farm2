@@ -18,7 +18,7 @@ class Uploader {
         'maxSize' => null,
         'extensions' => null,
         'required' => false,
-        'uploadDir' => 'uploads/',
+        'uploadDir' => 'profilepics/',
         'title' => array('auto', 10),
         'removeFiles' => true,
         'perms' => null,
@@ -55,18 +55,11 @@ class Uploader {
         "isSuccess" => false,
         "isComplete" => false,
         "data" => array(
-           
-        ),
-       // "data2"  =>
+            "files" => array(),
+            "metas" => array()
+        )
     );
 
-    //private $data256 = "data" => array(
-           // print_r([0]); 
-           //"files" => array(),
-            //"metas" => array()
-      //  );
-
-   
     public function __construct(){
         // __construct function
 
@@ -251,20 +244,17 @@ class Uploader {
                     ksort($metas);
 
                     $files[] = $metas['file'];
-                    //$this->data['data']['metas'][] = $metas;
-                    // $this->data['data']['metas'][] = $metas;
+                    $this->data['data']['metas'][] = $metas;
                 }
             }
 
             $this->data['isSuccess'] = count($field['name']) - count($removed_files) == count($files);
             $this->data['data']['files'] = $files;
 
-            //if($this->data['isSuccess']) $custom = $this->_onSuccess($this->data['data']['files'], $this->data['data']['metas']);
-            if($this->data['isSuccess']) $custom = $this->_onSuccess($this->data['data']['files'], $this->data['data']);
+            if($this->data['isSuccess']) $custom = $this->_onSuccess($this->data['data']['files'], $this->data['data']['metas']);
 
             $this->data['isComplete'] = true;
-           // $custom = $this->_onComplete($this->data['data']['files'], $this->data['data']['metas']);
-             $custom = $this->_onComplete($this->data['data']['files'], $this->data['data']);
+            $custom = $this->_onComplete($this->data['data']['files'], $this->data['data']['metas']);
         }
 
         return $this->data;

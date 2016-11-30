@@ -3,9 +3,15 @@
 <?php include "includes/header.php";
 include('database/db_conection.php');
 
+
+
 ?>
+<script src="jQuery.filer/js/jquery.filer.js" type="text/javascript"></script>
 
     <body class="fixed-left">
+
+     
+
 
         <!-- Loader -->
         <div id="preloader">
@@ -29,6 +35,8 @@ include('database/db_conection.php');
 	 <?php include "includes/leftsidemenu.php";?>
             <!-- Left Sidebar End -->
 
+
+
             <script type="text/javascript">
    //swal("Here's a message!"); 
             </script>
@@ -45,6 +53,7 @@ include('database/db_conection.php');
 
 
                         <div class="row">
+
 							<div class="col-xs-12">
 								<div class="page-title-box">
                                     <h4 class="page-title">Addition of New Attendant/Staff </h4>
@@ -63,7 +72,7 @@ include('database/db_conection.php');
                                     <div class="clearfix"></div>
                                 </div>
 								 <div class="p-20">
-                                                <form action="" method="post" role="form" data-parsley-validate id="form">
+                                                <form role="form" data-parsley-validate id="form" method="post" enctype="multipart/form-data" >
 
                                                 	<div class="form-group">
                                                         <label for="dobe">Full Names <span class="text-danger">*</span></label>
@@ -145,16 +154,16 @@ include('database/db_conection.php');
                                                         
                                                     </div>
 
-                                                     <div class="form-group">
+                                                     
                                                          
-                                                        <form action="./php/form_upload.php" method="post" enctype="multipart/form-data">
+                                                        <!-- <form action="./php/form_upload.php" method="post" enctype="multipart/form-data">
 
                                                         <input type="file" name="files[]" id="filer_input256" multiple="multiple">
                                                         <input type="submit" value="Submit">
 
                                                         </form>
-
-                                                     </div>
+ -->
+                                                     
                                                     
 
 
@@ -179,7 +188,7 @@ include('database/db_conection.php');
                                                     <input id="input-44" name="input44[]" type="file" multiple class="file-loading">
                                                     </div>-->
                                                     <!--<div id="errorBlock" class="help-block"></div>-->
-                                                    <script>
+                                                    <!-- <script>
                                                     $(document).on('ready', function() {
                                                         $("#input-44").fileinput({
                                                             uploadUrl: '/file-upload-batch/2',
@@ -191,18 +200,8 @@ include('database/db_conection.php');
                                                    
 
                                                     </script>
-
-                                                    <script type="text/javascript">
-                                                        $(document).ready(function(){
-
-                                                            $('#filer_input256').filer({
-                                                                showThumbs: true,
-                                                                addMore: true,
-                                                                allowDuplicates: false
-                                                            });
-
-                                                        });
-                                                    </script>
+ -->
+                                                    
 
                                                 
 
@@ -212,21 +211,23 @@ include('database/db_conection.php');
                                                         </div>-->
                                                     
 
-                                                    <br >
-                                                    <br >
-
-                                                    
                                                    
+
+                                                 <!--   
                                                 
-
+                                                     <input type="file" name="files[]" id="filer_input256" multiple="multiple"> -->
                                                    
-                                            <div class="form-group clearfix col-md-offset-4">
+                                            <!-- <div class="form-group clearfix col-md-offset-4">
                                                 <div class="col-xs-12 col-sm-6">
-                                                  <!-- <input class="btn btn-success" type="file" name="files[]" id="filer_input2" multiple="multiple" >-->
-                                                  <input type="file" name="files[]" id="filer_input256" multiple="multiple">
 
+                                                
+                       
+        
+                                                   <input class="btn btn-success" type="file" name="files[]" id="filer_input2" multiple="multiple" >
+                                                  <input type="file" name="files[]" id="filer_input256" multiple="multiple"> 
+ 
                                                 <div class="jFiler jFiler-theme-default">
-                                                <input type="file" name="files[]" id="filer_input256" multiple="multiple"
+                                                <input type="file" name="files[]" id="filer_input21" multiple="multiple"
                                                   style="position: relative; left: -9999px; top: -9999px; z-index: -9999;">
 
 
@@ -239,12 +240,12 @@ include('database/db_conection.php');
 
                                                 <div class="jFiler-input-button" > Choose Files</div>
 
-                                                </div>
-                                               <!-- <input type="file" name="files[]" id="filer_input2" multiple="multiple">-->
+                                                </div> 
+                                               <input type="file" name="files[]" id="filer_input2" multiple="multiple">
 
 
-                                                </div>
-                                                </div>
+                                               </div> 
+                                                </div> 
 
                                                   
                                                             
@@ -252,23 +253,118 @@ include('database/db_conection.php');
                                                 
 
                                             </div>
-                                            <script type="text/javascript">
-                                                $(document).ready(function() {
-                                                     $('#filer_input').filer();       
-                                                });
 
 
-                                                $(document).ready(function(){
+ -->                                        
 
-                                                    $('#filer_input2').filer({
-                                                        showThumbs: true,
-                                                        addMore: true,
-                                                        allowDuplicates: false
-                                                    });
+                                            <br >    
+                                            <!-- <div class="col-sm-12"> -->
+                                                
+                                                 <div class="form-group clearfix col-md-offset-4">
+                                                <div class="col-xs-12 col-sm-6">
 
-                                                });
-                                            </script>
+                                                <div>
+                                             
+                                                     <!-- <input type="file" name="files[]" id="filer_input12" multiple="multiple" > -->
 
+
+
+                     <script type="text/javascript">
+                                            //             $(document).ready(function(){
+
+                                            //     $('#filer_input12').filer({
+                                            //         showThumbs: true,
+                                            //         addMore: true,
+                                            //         allowDuplicates: false
+                                            //     });
+
+                                            // });
+
+                                            //              jQuery(document).ready(function(){
+
+                                            //     jQuery('#filer_input12').filer({
+                                            //         showThumbs: true,
+                                            //         addMore: true,
+                                            //         allowDuplicates: false
+                                            //     });
+
+                                            // });
+                                           
+                                           $(document).ready(function(){
+
+                                                //'use-strict';
+
+                                             $('#filer_input12').filer({
+                                                limit: 3,
+                                                maxSize: 3,
+                                                extensions: ['jpg', 'jpeg', 'png', 'gif', 'psd'],
+                                                changeInput: true,
+                                                showThumbs: true,
+                                                addMore: false
+                                                    // uploadFile: {
+                                                    //         url: null, //URL to which the request is sent {String}
+                                                    //         data: null, //Data to be sent to the server {Object}
+                                                    //         type: 'POST', //The type of request {String}
+                                                    //         enctype: 'multipart/form-data', //Request enctype {String}
+                                                    //         synchron: false, //Upload synchron the files
+                                                    //         beforeSend: null, //A pre-request callback function {Function}
+                                                    //         success: null, //A function to be called if the request succeeds {Function}
+                                                    //         error: null, //A function to be called if the request fails {Function}
+                                                    //         statusCode: null, //An object of numeric HTTP codes {Object}
+                                                    //         onProgress: null, //A function called while uploading file with progress percentage {Function}
+                                                    //         onComplete:null//  //A function called when all files were uploaded {Function}
+                                                    //     }
+                                                    
+                                                    
+                                            });
+
+                                             });
+
+                                           // function sam{
+                                           //  swal("file Uploaded Succcessfully!");
+                                           // }
+
+                                                        
+                                                    </script>
+
+
+
+
+                                                    
+
+                                                    <p align="center">Browse For Attendant Profile Picture</p>
+
+                                        <input type="file" name="files[]" id="filer_input12" multiple="multiple"  style="position: relative; left: -9999px; top: -9999px; z-index: -9999;">
+
+
+                                                    <!-- <form action="form_upload.php" method="post" enctype="multipart/form-data">
+
+                                                      <input type="file" name="files[]" id="filer_input12" multiple="multiple" style="position: relative; left: -9999px; top: -9999px; z-index: -9999;">
+
+                                                
+            
+
+                                                    </form>
+ -->
+
+                                                      
+            
+
+                                                    
+                                                </div>
+                       
+        
+
+
+
+                                               </div> 
+                                                </div> 
+                                           <!--  </div> -->
+
+                                            <hr >
+                                            <br >
+                                          
+                                            
 
 
                                            
@@ -303,7 +399,7 @@ include('database/db_conection.php');
                                                     <div style="text-align: center; ">
 
 
-                                                         <button style="margin: auto; width: 120px;" name="submit" class="btn btn-primary" type="submit" id="tooltip-animation" title="Submit/insert Data to Database!" >
+                                                         <button style="margin: auto; width: 120px;"  value="Submit" name="submit" class="btn btn-primary" type="submit" id="tooltip-animation" title="Submit/insert Data to Database!" >
                                                             Submit
                                                         </button>
 
@@ -317,6 +413,7 @@ include('database/db_conection.php');
 
                                                 </form>
                                             </div>
+
 							</div>
 						</div>
                         <!-- end row -->
@@ -327,11 +424,13 @@ include('database/db_conection.php');
 
                 </div> <!-- content -->
 
-                <footer class="footer text-right">
+               <!--  <footer class="footer text-right">
                     2016 © Zircos.
-                </footer>
+                </footer> -->
 
             </div>
+
+
 
 
             <!-- ============================================================== -->
@@ -340,7 +439,7 @@ include('database/db_conection.php');
 
 
             <!-- Right Sidebar -->
-            <div class="side-bar right-bar">
+            <!-- <div class="side-bar right-bar">
                 <a href="javascript:void(0);" class="right-bar-toggle">
                     <i class="mdi mdi-close-circle-outline"></i>
                 </a>
@@ -386,20 +485,22 @@ include('database/db_conection.php');
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- /Right-bar -->
 
         </div>
+
+
         <!-- END wrapper -->
 
 
 
-        <script>
+       <!--  <script>
             var resizefunc = [];
-        </script>
+        </script> -->
 
         <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
+        <!-- <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/detect.js"></script>
         <script src="assets/js/fastclick.js"></script>
@@ -407,14 +508,14 @@ include('database/db_conection.php');
         <script src="assets/js/waves.js"></script>
         <script src="assets/js/jquery.slimscroll.js"></script>
         <script src="assets/js/jquery.scrollTo.min.js"></script>
-        <script src="../plugins/switchery/switchery.min.js"></script>
+        <script src="../plugins/switchery/switchery.min.js"></script> -->
 
         <!-- App js -->
-        <script src="assets/js/jquery.core.js"></script>
+        <!-- <script src="assets/js/jquery.core.js"></script>
         <script src="assets/js/jquery.app.js"></script>
-
+ -->
         <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
+        <!-- <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/detect.js"></script>
         <script src="assets/js/fastclick.js"></script>
@@ -422,37 +523,32 @@ include('database/db_conection.php');
         <script src="assets/js/waves.js"></script>
         <script src="assets/js/jquery.slimscroll.js"></script>
         <script src="assets/js/jquery.scrollTo.min.js"></script>
-        <script src="plugins/switchery/switchery.min.js"></script>
+        <script src="plugins/switchery/switchery.min.js"></script> -->
 
-        <script src="plugins/moment/moment.js"></script>
+        <!-- <script src="plugins/moment/moment.js"></script>
         <script src="plugins/timepicker/bootstrap-timepicker.js"></script>
         <script src="plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
         <script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
         <script src="plugins/clockpicker/js/bootstrap-clockpicker.min.js"></script>
         <script src="plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-         <script type="text/javascript" src="plugins/parsleyjs/parsley.min.js"></script>
+         <script type="text/javascript" src="plugins/parsleyjs/parsley.min.js"></script> -->
          <!-- Tooltipster js -->
-        <script src="plugins/tooltipster/tooltipster.bundle.min.js"></script>
+        <!-- <script src="plugins/tooltipster/tooltipster.bundle.min.js"></script>
         <script src="assets/pages/jquery.tooltipster.js"></script>
-
+ -->
         <!--<script src="jQuery.filer/js/jquery.filer.min.js"></script>-->
-        <script src="jQuery.filer/js/jquery.filer.js"></script>
+       <!--  <script src="jQuery.filer/js/jquery.filer.js"></script> -->
 
         <!-- Jquery filer js -->
        <!-- <script src="plugins/jquery.filer/js/jquery.filer.min.js"></script>-->
              
         <!-- App js -->
-        <script src="assets/js/jquery.core.js"></script>
-        <script src="assets/js/jquery.app.js"></script>
+        <!-- <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script> -->
 
-         <!-- page specific js -->
-        <script src="assets/pages/jquery.fileuploads.init.js"></script>
-
-
-        <!-- Init js -->
-        <script src="assets/pages/jquery.form-pickers.init.js"></script>
-        <script type="text/javascript">
+         
+       <!--  <script type="text/javascript">
 
             $(document).ready(function() {
                 $('#form').parsley();
@@ -468,7 +564,7 @@ include('database/db_conection.php');
                     return false; // Don't submit form for this demo
                 });
             });
-        </script>
+        </script> -->
 
 <?php
 
@@ -476,11 +572,72 @@ include('database/db_conection.php');
 if(isset($_POST['submit'])){
 
 
+    //
+     
+
+
+
+
+
+
+    //
+
+
 
 if(!empty($_POST["names"]) && !empty($_POST["date_joined"]) && !empty($_POST["residence"]) && !empty($_POST["contact"]) && !empty($_POST["pri_role"]) && !empty($_POST["qualify"]) && !empty($_POST["nok"]) && !empty($_POST["nokc"])  ){
         //if($names == null){
-           
 
+    include('class.uploader.php');
+
+    
+
+    $uploader = new Uploader();
+    $data = $uploader->upload($_FILES['files'], array(
+        'limit' => 10, //Maximum Limit of files. {null, Number}
+        'maxSize' => 10, //Maximum Size of files {null, Number(in MB's)}
+        'extensions' => null, //Whitelist for file extension. {null, Array(ex: array('jpg', 'png'))}
+        'required' => false, //Minimum one file is required for upload {Boolean}
+        'uploadDir' => 'profilepics/', //Upload directory {String}
+        'title' => array('name'), //New file name {null, String, Array} *please read documentation in README.md
+        'removeFiles' => true, //Enable file exclusion {Boolean(extra for jQuery.filer), String($_POST field name containing json data with file names)}
+        'replace' => true, //Replace the file if it already exists  {Boolean}
+        'perms' => null, //Uploaded file permisions {null, Number}
+        'onCheck' => null, //A callback function name to be called by checking a file for errors (must return an array) | ($file) | Callback
+        'onError' => null, //A callback function name to be called if an error occured (must return an array) | ($errors, $file) | Callback
+        'onSuccess' => null, //A callback function name to be called if all files were successfully uploaded | ($files, $metas) | Callback
+        'onUpload' => null, //A callback function name to be called if all files were successfully uploaded (must return an array) | ($file) | Callback
+        'onComplete' => null, //A callback function name to be called when upload is complete | ($file) | Callback
+        'onRemove' => null //A callback function name to be called by removing files (must return an array) | ($removed_files) | Callback
+    ));
+
+    if($data['isComplete']){
+        //$info = $data['data'];
+
+        //echo '<pre>';
+        // print_r($info);
+        // echo '</pre>';
+
+         $info= $data['data']['files'][0];
+     //$info=$arr[0];
+       // $infor = $data1['file'];
+     // $target_dir = "uploads/";
+     // $target_file = $target_dir . basename($_FILES["files[]"]["name"]);
+     // echo $target_file;
+
+      // echo '<pre>';
+        //print_r ($info);
+        echo $info;
+        
+        
+
+
+    }
+
+    if($data['hasErrors']){
+       // $errors = $data['errors'];
+        //print_r($errors);
+    }
+         
 
 
 $message = "Data Save In Database";
@@ -500,6 +657,7 @@ $message = "Data Save In Database";
         $qualify = $_POST['qualify'];
         $train = $_POST['train'];
         $gender = $_POST['gender'];
+        //$info = $_POST[]
 
         
        
@@ -507,7 +665,7 @@ $message = "Data Save In Database";
         // $query .= "";
 
 
-        $query = "INSERT INTO `Attendant`( `Full_Names`, `Date_Joined`, `Residence`, `Contact`, `Next_Of_Kin_Names`, `Next_Of_Kin_Contact`, `Primary_Role`, `Secondary_Role`, `Qualifications`, `Additional_Training`, `Current_Salary`, `Gender`) VALUES ('$names', '$date_joined', '$residence', '$contact', '$nok', '$nokc', '$pri_role', '$sec_role', '$qualify', '$train', '$sal','$gender') " or die(mysqli_error($dbcon));
+        $query = "INSERT INTO `Attendant`( `Full_Names`, `Date_Joined`, `Residence`, `Contact`, `Next_Of_Kin_Names`, `Next_Of_Kin_Contact`, `Primary_Role`, `Secondary_Role`, `Qualifications`, `Additional_Training`, `Current_Salary`, `Gender`, `image_location`) VALUES ('$names', '$date_joined', '$residence', '$contact', '$nok', '$nokc', '$pri_role', '$sec_role', '$qualify', '$train', '$sal','$gender', '$info') " or die(mysqli_error($dbcon));
 
 
          $result = mysqli_query($dbcon , $query);
@@ -566,7 +724,7 @@ $message = "Data Save In Database";
                                                             
 
                                                                 swal({
-                                                                      title: "Data inserted Succcessfully!",
+                                                                      title: "Data $ Image inserted Succcessfully!",
                                                                       text: "Thanks for Updating Attendants Menu.",
                                                                       timer: 5000,
                                                                       showConfirmButton: false
@@ -684,6 +842,7 @@ $message = "Data Save In Database";
 
     
   ?>
+
 <?php include "includes/footer.php";
  
  ?>

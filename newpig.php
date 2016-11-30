@@ -68,14 +68,39 @@ include('database/db_conection.php');
 
                                                     <div class="form-group">
                                                         <label for="dobe">Date of Birth<span class="text-danger">*</span></label>
-                                                        <input type="date" name="birth" parsley-trigger="change" required
-                                                               placeholder="Enter date of birth" class="form-control" id="=dob">
+                                                        <!--<input type="date" name="birth" parsley-trigger="change" required
+                                                               placeholder="Enter date of birth" class="form-control" id="=dob">-->
+
+                                                    <div>
+                                                        <div class="input-group">
+                                                        
+                                                        <input type="text" name="birth" class="form-control" placeholder="mm/dd/yyyy" id="datepicker-autoclose">
+                                                        <span class="input-group-addon bg-custom b-0"><i class="mdi mdi-calendar text-white"></i></span>
+                                                        </div>
+
+                                                    </div><!-- input-group -->
+
                                                     </div>
+
                                                     <div class="form-group">
                                                         <label for="emailAddress">Date of Weaning<span class="text-danger">*</span></label>
-                                                        <input type="date" name="weaning" parsley-trigger="change" required
-                                                               placeholder="Enter email" class="form-control" id="emailAddress">
+                                                        <!--<input type="date" name="weaning" parsley-trigger="change" required
+                                                               placeholder="Enter email" class="form-control" id="emailAddress">-->
+
+
+                                                    <div>
+                                                        <div class="input-group">
+                                                        
+                                                        <input type="text" name="weaning" class="form-control" placeholder="mm/dd/yyyy" id="datepicker">
+                                                        <span class="input-group-addon bg-custom b-0"><i class="mdi mdi-calendar text-white"></i></span>
+                                                        </div>
+
+                                                    </div><!-- input-group -->
+
                                                     </div>
+
+
+
 													 <div class="form-group">
                                                         <label for="emailAddress">Breed<span class="text-danger">*</span></label>
                                                         <input type="text" name="breed" data-parsley-pattern="^[A-Za-z. ]*$" required
@@ -89,7 +114,7 @@ include('database/db_conection.php');
                                                         	$sel_query=mysqli_query($dbcon,$select);
                                                         	while ($rw=mysqli_fetch_array($sel_query)) {
                                                         		?>
-                                                        		<option value="<?php echo $rw[0]; ?>" parsley-trigger="change" required><?php echo $rw[1],$rw[2]; ?></option>
+                                                        		<option value="<?php echo $rw[0]; ?>" parsley-trigger="change" required><?php echo "Sty" .$rw[1], " Pen" .$rw[2]; ?></option>
 
                                                         <?php
                                                         	}
@@ -126,10 +151,15 @@ include('database/db_conection.php');
                                                     <br >
 
                                                     <div style="text-align: center; ">
-                                                           <button name="submit" class="btn btn-primary" type="submit">
+                                                         <!--   <button name="submit" class="btn btn-primary" type="submit">
+                                                            Submit
+                                                        </button> -->
+
+                                                        <button style="margin: auto; width: 120px;" name="submit" class="btn btn-primary" type="submit" id="tooltip-animation" title="Submit/insert Data to Database!" >
                                                             Submit
                                                         </button>
-                                                        <button type="reset" class="btn btn-default waves-effect m-l-5">
+
+                                                        <button type="reset" class="btn btn-default" style="margin: auto; width: 120px;">
                                                             Cancel
                                                         </button>
 
@@ -149,10 +179,10 @@ include('database/db_conection.php');
                     </div> <!-- container -->
 
                 </div> <!-- content -->
-
+<!-- 
                 <footer class="footer text-right">
                     2016 © Zircos.
-                </footer>
+                </footer> -->
 
             </div>
 
@@ -216,12 +246,12 @@ include('database/db_conection.php');
         <!-- END wrapper -->
 
 
-
+<!-- 
         <script>
             var resizefunc = [];
         </script>
 
-        <!-- jQuery  -->
+         jQuery  --><!-- 
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/detect.js"></script>
@@ -230,13 +260,22 @@ include('database/db_conection.php');
         <script src="assets/js/waves.js"></script>
         <script src="assets/js/jquery.slimscroll.js"></script>
         <script src="assets/js/jquery.scrollTo.min.js"></script>
-        <script src="../plugins/switchery/switchery.min.js"></script>
+        <script src="plugins/switchery/switchery.min.js"></script>
 
-        <script type="text/javascript" src="plugins/parsleyjs/parsley.min.js"></script>
+        <script src="assets/js/datetimepicker.js"></script>
+        <script src="plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-        <!-- App js -->
+        <script type="text/javascript" src="plugins/parsleyjs/parsley.min.js"></script> -->
+
+      <!--   <script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script> -->
+      <!--   <script src="plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script> -->
+
+        <!-- Init js --><!-- 
+        <script src="assets/pages/jquery.form-pickers.init.js"></script> -->
+
+        <!-- App js --><!-- 
         <script src="assets/js/jquery.core.js"></script>
-        <script src="assets/js/jquery.app.js"></script>
+        <script src="assets/js/jquery.app.js"></script>  -->
 <?php
   
     
@@ -319,6 +358,9 @@ include('database/db_conection.php');
 
     
   ?>
+  <?php include "includes/footer.php";
+ 
+ ?>
 
     </body>
 </html>

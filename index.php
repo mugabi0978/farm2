@@ -4,21 +4,6 @@
  include('database/db_conection.php');
  ?>
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
-<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
- --><script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-
-<!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="jQuery.filer/css/jquery.filer.css" rel="stylesheet">
-
-    <!-- Jvascript -->
-    <script src="http://code.jquery.com/jquery-3.1.0.min.js" crossorigin="anonymous"></script>
-    <script src="jQuery.filer/js/jquery.filer.js" type="text/javascript"></script>
-    <script src="jQuery.filer/js/custom.js" type="text/javascript"></script>
 
 
 
@@ -51,6 +36,8 @@
            <?php include "includes/leftsidemenu.php";?>
 
 
+
+
             <!-- Left Sidebar End -->
 
 
@@ -60,22 +47,12 @@
             <!-- ============================================================== -->
             <div class="content-page">
                 <!-- Start content -->
-                <script type="text/javascript">
-            $(document).ready(function(){
+               
 
-                    $('#filer_input21').filer({
-                        showThumbs: true,
-                        addMore: true,
-                        allowDuplicates: false
-                    });
-
-                });
-                </script>
-                <div class="content">
-                     <input type="file" name="files[]" id="filer_input21" multiple="multiple">
             
 
                     <div class="container">
+
                         <div class="row">
 							<div class="col-xs-12">
 								<div class="page-title-box">
@@ -97,7 +74,10 @@
 						</div>
                         <!-- end row -->
 
+
                         <div class="row text-center">
+
+                        
 
                             <div class="col-lg-2 col-md-4 col-sm-6">
                                 <div class="card-box widget-box-one">
@@ -732,12 +712,12 @@
         <!-- END wrapper -->
 
 
-        <script>
+       <!--  <script>
             var resizefunc = [];
-        </script>
+        </script> -->
 
         <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
+        <!-- <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/detect.js"></script>
         <script src="assets/js/fastclick.js"></script>
@@ -746,21 +726,16 @@
         <script src="assets/js/jquery.slimscroll.js"></script>
         <script src="assets/js/jquery.scrollTo.min.js"></script>
         <script src="plugins/switchery/switchery.min.js"></script>
-
-        <!-- Counter js  -->
-        <script src="plugins/waypoints/jquery.waypoints.min.js"></script>
-        <script src="plugins/counterup/jquery.counterup.min.js"></script>
-
-        <!--Morris Chart-->
-		<script src="plugins/morris/morris.min.js"></script>
-		<script src="plugins/raphael/raphael-min.js"></script>
-
-        <!-- Dashboard init -->
-        <script src="assets/pages/jquery.dashboard.js"></script>
+ -->
+        
 
         <!-- App js -->
-        <script src="assets/js/jquery.core.js"></script>
-        <script src="assets/js/jquery.app.js"></script>
+       <!--  <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script> -->
+
+         <?php include "includes/footer.php";
+ 
+ ?>
 
     </body>
 </html>
